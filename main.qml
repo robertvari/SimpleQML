@@ -18,6 +18,11 @@ Window {
         anchors.fill: parent
         anchors.margins: 10
 
+        Text{
+            text: ProcessData.name
+            font.pixelSize: 30
+        }
+
         TextField{
             id: name_field
             placeholderText: "Name"
@@ -70,7 +75,7 @@ Window {
                     return
                 }
 
-                ProcessData.print_data(name, address, phone)
+                ProcessData.set_data(name, address, phone)
             }
         }
     }
