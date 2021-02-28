@@ -70,7 +70,7 @@ Window {
                     return
                 }
 
-                print(name, address, phone)
+                ProcessData.print_data(name, address, phone)
             }
         }
     }
